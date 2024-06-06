@@ -35,4 +35,26 @@
 		<PackageReference Include="Carter" Version="8.0.0" />
 	</ItemGroup>
 
+	<ItemGroup>
+	  <Folder Include="Authentications\" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Compile Update="Logs\SerilogIntegrationExtensions.cs">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </Compile>
+	  <Compile Update="Logs\StandardLogExtensions.cs">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </Compile>
+	  <Compile Update="Shared\Logs\Entities\LogData.cs">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </Compile>
+	  <Compile Update="Shared\Logs\Services\ILogServices.cs">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </Compile>
+	  <Compile Update="Shared\Logs\Services\LogServices.cs">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </Compile>
+	</ItemGroup>
+
 </Project>

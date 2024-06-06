@@ -1,4 +1,6 @@
-﻿namespace Puma.Refund.Extensions.CustomResults;
+﻿using Puma.Refund.Extensions.Shared.LogFilters.Services;
+
+namespace Puma.Refund.Extensions.CustomResults;
 
 public class ApiCustomResults(ILogServices logServices,
                               INotificationServices notificationServices) : IApiCustomResults

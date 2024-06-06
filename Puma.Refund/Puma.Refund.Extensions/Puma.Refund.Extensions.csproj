@@ -40,19 +40,19 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <Compile Update="Logs\SerilogIntegrationExtensions.cs">
+	  <Compile Update="LogFilters\SerilogIntegrationExtensions.cs">
 	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
 	  </Compile>
-	  <Compile Update="Logs\StandardLogExtensions.cs">
+	  <Compile Update="LogFilters\StandardLogExtensions.cs">
 	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
 	  </Compile>
-	  <Compile Update="Shared\Logs\Entities\LogData.cs">
+	  <Compile Update="Shared\LogFilters\Entities\LogData.cs">
 	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
 	  </Compile>
-	  <Compile Update="Shared\Logs\Services\ILogServices.cs">
+	  <Compile Update="Shared\LogFilters\Services\ILogServices.cs">
 	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
 	  </Compile>
-	  <Compile Update="Shared\Logs\Services\LogServices.cs">
+	  <Compile Update="Shared\LogFilters\Services\LogServices.cs">
 	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
 	  </Compile>
 	</ItemGroup>

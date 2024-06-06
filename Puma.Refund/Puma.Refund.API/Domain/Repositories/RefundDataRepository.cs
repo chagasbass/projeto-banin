@@ -4,7 +4,7 @@ using Microsoft.Extensions.Options;
 using Puma.Refund.API.Domain.Entities;
 using Puma.Refund.API.QueryHelpers;
 using Puma.Refund.Extensions.Shared.Configurations;
-using Puma.Refund.Extensions.Shared.Logs.Services;
+using Puma.Refund.Extensions.Shared.LogFilters.Services;
 
 namespace Puma.Refund.API.Domain.Repositories;
 
@@ -62,7 +62,7 @@ public class RefundDataRepository(ILogServices logServices,
 
             notificationServices.AddNotification(new Flunt.Notifications.Notification("RefundData-Select", "Problemas na listagem do dado"));
 
-            return Enumerable.Empty<RefundData>();
+            return [];
         }
     }
 }
